@@ -29,6 +29,12 @@ Think: **"Normalize.css meets Dracula colors"** — not **"Bootstrap but Dracula
 | **Competition**  | Competing with Tailwind, shadcn | Not competing — complementary foundation    |
 | **Use case**     | "Build sites with Dracula UI"   | "Add Dracula colors to your existing stack" |
 
+### Color Accuracy & Spec Compliance
+
+**dracula-css uses official Dracula specification colors** — verified against [spec.draculatheme.com](https://spec.draculatheme.com/).
+
+Some third-party Dracula implementations use modified color values that differ from the official spec. dracula-css prioritizes spec compliance for consistency with VSCode Dracula, terminal themes, and other official implementations.
+
 ## 🦇 Install
 
 All instructions can be found at [draculatheme.com/css](https://draculatheme.com/css).
@@ -84,7 +90,7 @@ const styles = {
 
 ## 🩸 Color Architecture
 
-Following the [official Dracula specification](https://spec.draculatheme.com/):
+dracula-css organizes colors from the [official Dracula specification](https://spec.draculatheme.com/) into three layers for web development:
 
 ### Three Color Layers
 
@@ -124,13 +130,19 @@ Per the spec: _"Functional colors are UI-specific colors for interactive element
 Dracula CSS supports both dark (Dracula) and light (Alucard) modes:
 
 ```html
-<!-- Automatic (follows system preference) -->
+<!-- Option 1: Automatic (follows system preference) -->
 <html>
-  <!-- Force dark mode -->
-  <html class="dracula-dark">
-    <!-- Force light mode -->
-    <html class="dracula-light"></html>
-  </html>
+  ...
+</html>
+
+<!-- Option 2: Force dark mode -->
+<html class="dracula-dark">
+  ...
+</html>
+
+<!-- Option 3: Force light mode -->
+<html class="dracula-light">
+  ...
 </html>
 ```
 
@@ -209,6 +221,19 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 - [Twitter](https://twitter.com/draculatheme) — Best for getting updates about themes and new stuff.
 - [GitHub](https://github.com/dracula/dracula-theme/discussions) — Best for asking questions and discussing issues.
 - [Discord](https://draculatheme.com/discord-invite) — Best for hanging out with the community.
+
+## External Tools & Resources
+
+**Color Pickers & Generators:**
+
+- [Dracula Colors by Stormhold](https://dracula-colors.stormhold.net/) — Interactive color reference with RGB values and copy-to-clipboard
+- [Stormhold Visual Reference](https://stormhold.net/the-dracula-theme-visual-reference-and-css-variables-for-web-design/) — Comprehensive visual guide to Dracula theme
+
+**Component Libraries (Non-official):**
+
+- [dracula-ui](https://github.com/dracula/dracula-ui) (archived) — React component library (uses modified colors, see "Color Accuracy" above)
+
+**Note:** External tools may use modified Dracula color values that differ from the official spec. dracula-css uses spec-compliant colors for consistency with VSCode, terminal themes, and other official Dracula implementations.
 
 ## Related
 
