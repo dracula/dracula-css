@@ -19,10 +19,14 @@
     "build:js": "esbuild src/js/tokens.ts --bundle --format=esm --outfile=dist/dracula-tokens.js && tsc src/js/tokens.ts --declaration --emitDeclarationOnly --outDir dist",
     "watch": "sass src/scss/dracula.scss dist/dracula.css --watch",
     "clean": "rm -rf dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "stylelint 'src/scss/**/*.scss'",
     "lint:fix": "stylelint 'src/scss/**/*.scss' --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "pretest": "npm run lint",
     "prepublishOnly": "npm run build",
     "prepare": "husky"
   },
@@ -59,8 +63,11 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "color-contrast-checker": "^2.1.0",
     "esbuild": "^0.20.0",
     "husky": "^9.1.7",
+    "jest": "^30.2.0",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
     "sass": "^1.70.0",
