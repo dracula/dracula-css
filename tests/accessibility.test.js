@@ -74,6 +74,20 @@ describe('Color Contrast Accessibility (WCAG AA)', () => {
   });
 });
 
+describe('Interactive State Colors', () => {
+  const checker = new colorContrast();
+
+  const colors = {
+    bg: '#282a36',
+    pink: '#ff79c6', // Link hover
+  };
+
+  test('Link hover color (pink) meets WCAG AA', () => {
+    const passes = checker.isLevelAA(colors.bg, colors.pink, 14);
+    expect(passes).toBe(true);
+  });
+});
+
 describe('Alucard (Light Mode) Contrast', () => {
   const checker = new colorContrast();
 

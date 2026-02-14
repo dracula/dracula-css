@@ -102,4 +102,53 @@ describe('Variables-only Build', () => {
     expect(result.css).toContain(':root');
     expect(result.css).toContain('--drac-bg:');
   });
+
+  test('Variables-only build contains no element selectors', () => {
+    const result = sass.compile(path.join(__dirname, '../src/scss/_variables.scss'));
+    // Should NOT contain element selectors (only :root)
+    expect(result.css).not.toMatch(/\n(body|h1|button|input|table)\s*\{/);
+    expect(result.css).toContain(':root');
+  });
+});
+
+describe('Color Consistency', () => {
+  let compiledCSS;
+
+  beforeAll(() => {
+    const result = sass.compile(path.join(__dirname, '../src/scss/dracula.scss'), {
+      style: 'expanded',
+    });
+    compiledCSS = result.css;
+  });
+
+  test('Functional colors are distinct from syntax colors', () => {
+    const functionalColors = ['#de5735', '#a39514', '#089108', '#0081d6', '#815cd6'];
+    const syntaxColors = [
+      '#ff5555',
+      '#ffb86c',
+      '#f1fa8c',
+      '#50fa7b',
+      '#bd93f9',
+      '#8be9fd',
+      '#ff79c6',
+    ];
+
+    functionalColors.forEach((funcColor) => {
+      expect(syntaxColors).not.toContain(funcColor);
+    });
+  });
+
+  test('Spacing scale follows consistent progression', () => {
+    const spacings = {
+      xs: '0.25rem',
+      sm: '0.5rem',
+      md: '1rem',
+      lg: '1.5rem',
+      xl: '2rem',
+    };
+
+    Object.entries(spacings).forEach(([size, value]) => {
+      expect(compiledCSS).toContain(`--drac-spacing-${size}: ${value}`);
+    });
+  });
 });
