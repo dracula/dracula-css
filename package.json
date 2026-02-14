@@ -1,6 +1,6 @@
 {
   "name": "dracula-css",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Framework-agnostic Dracula theme for the web - CSS variables, Sass, and JS tokens",
   "main": "dist/dracula.css",
   "module": "dist/dracula-tokens.js",
