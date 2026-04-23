@@ -94,7 +94,6 @@
     --drac-border-color: #bcbab3;
   }
 }
-
 .dracula-light {
   --drac-bg: #f8f8f2;
   --drac-fg: #282a36;
@@ -239,7 +238,6 @@ sup {
     scroll-behavior: auto !important;
   }
 }
-
 h1,
 h2,
 h3,
@@ -292,7 +290,6 @@ a {
   text-decoration: none;
   transition: color var(--drac-transition-duration) var(--drac-transition-timing);
 }
-
 a:hover, a:focus {
   color: var(--drac-link-hover-color);
   text-decoration: underline;
@@ -336,7 +333,6 @@ blockquote {
   background-color: var(--drac-ui-bg-dark);
   border-radius: 0 var(--drac-border-radius) var(--drac-border-radius) 0;
 }
-
 blockquote p:last-child {
   margin-bottom: 0;
 }
@@ -359,7 +355,6 @@ ol {
 li {
   margin-bottom: var(--drac-spacing-xs);
 }
-
 li::marker {
   color: var(--drac-pink);
 }
@@ -409,7 +404,6 @@ details {
   padding: var(--drac-spacing-sm) var(--drac-spacing-md);
   background-color: var(--drac-ui-bg-dark);
 }
-
 details[open] summary {
   margin-bottom: var(--drac-spacing-sm);
   border-bottom: 1px solid var(--drac-border-color);
@@ -443,7 +437,6 @@ pre {
   margin-bottom: var(--drac-spacing-md);
   border: 1px solid var(--drac-border-color);
 }
-
 pre code {
   background-color: transparent;
   padding: 0;
@@ -478,18 +471,18 @@ button {
   line-height: inherit;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="url"],
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=url],
+input[type=date],
+input[type=time],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
 textarea {
   display: block;
   width: 100%;
@@ -500,70 +493,66 @@ textarea {
   border-radius: var(--drac-border-radius);
   transition: border-color var(--drac-transition-duration) var(--drac-transition-timing), box-shadow var(--drac-transition-duration) var(--drac-transition-timing);
 }
-
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
-input[type="number"]::placeholder,
-input[type="search"]::placeholder,
-input[type="tel"]::placeholder,
-input[type="url"]::placeholder,
-input[type="date"]::placeholder,
-input[type="time"]::placeholder,
-input[type="datetime-local"]::placeholder,
-input[type="month"]::placeholder,
-input[type="week"]::placeholder,
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=number]::placeholder,
+input[type=search]::placeholder,
+input[type=tel]::placeholder,
+input[type=url]::placeholder,
+input[type=date]::placeholder,
+input[type=time]::placeholder,
+input[type=datetime-local]::placeholder,
+input[type=month]::placeholder,
+input[type=week]::placeholder,
 textarea::placeholder {
   color: var(--drac-comment);
   opacity: 1;
 }
-
-input[type="text"]:hover,
-input[type="email"]:hover,
-input[type="password"]:hover,
-input[type="number"]:hover,
-input[type="search"]:hover,
-input[type="tel"]:hover,
-input[type="url"]:hover,
-input[type="date"]:hover,
-input[type="time"]:hover,
-input[type="datetime-local"]:hover,
-input[type="month"]:hover,
-input[type="week"]:hover,
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+input[type=number]:hover,
+input[type=search]:hover,
+input[type=tel]:hover,
+input[type=url]:hover,
+input[type=date]:hover,
+input[type=time]:hover,
+input[type=datetime-local]:hover,
+input[type=month]:hover,
+input[type=week]:hover,
 textarea:hover {
   border-color: var(--drac-ui-bg-lighter);
 }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="date"]:focus,
-input[type="time"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=datetime-local]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
 textarea:focus {
   outline: none;
   border-color: var(--drac-ui-focus);
   box-shadow: 0 0 0 3px rgba(129, 92, 214, 0.25);
 }
-
-input[type="text"]:disabled,
-input[type="email"]:disabled,
-input[type="password"]:disabled,
-input[type="number"]:disabled,
-input[type="search"]:disabled,
-input[type="tel"]:disabled,
-input[type="url"]:disabled,
-input[type="date"]:disabled,
-input[type="time"]:disabled,
-input[type="datetime-local"]:disabled,
-input[type="month"]:disabled,
-input[type="week"]:disabled,
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled,
+input[type=number]:disabled,
+input[type=search]:disabled,
+input[type=tel]:disabled,
+input[type=url]:disabled,
+input[type=date]:disabled,
+input[type=time]:disabled,
+input[type=datetime-local]:disabled,
+input[type=month]:disabled,
+input[type=week]:disabled,
 textarea:disabled {
   background-color: var(--drac-ui-bg-darker);
   color: var(--drac-comment);
@@ -590,17 +579,14 @@ select {
   background-position: right var(--drac-spacing-sm) center;
   padding-right: 2.5em;
 }
-
 select:hover {
   border-color: var(--drac-ui-bg-lighter);
 }
-
 select:focus {
   outline: none;
   border-color: var(--drac-ui-focus);
   box-shadow: 0 0 0 3px rgba(129, 92, 214, 0.25);
 }
-
 select:disabled {
   background-color: var(--drac-ui-bg-darker);
   color: var(--drac-comment);
@@ -608,9 +594,9 @@ select:disabled {
 }
 
 button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type=submit],
+input[type=reset],
+input[type=button] {
   display: inline-block;
   padding: var(--drac-spacing-sm) var(--drac-spacing-lg);
   background-color: var(--drac-purple);
@@ -622,49 +608,44 @@ input[type="button"] {
   text-align: center;
   transition: background-color var(--drac-transition-duration) var(--drac-transition-timing), transform 0.1s ease;
 }
-
 button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover {
   background-color: var(--drac-pink);
 }
-
 button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active {
+input[type=submit]:active,
+input[type=reset]:active,
+input[type=button]:active {
   transform: translateY(1px);
 }
-
 button:focus-visible,
-input[type="submit"]:focus-visible,
-input[type="reset"]:focus-visible,
-input[type="button"]:focus-visible {
+input[type=submit]:focus-visible,
+input[type=reset]:focus-visible,
+input[type=button]:focus-visible {
   outline: 2px solid var(--drac-ui-focus);
   outline-offset: 2px;
 }
-
 button:disabled,
-input[type="submit"]:disabled,
-input[type="reset"]:disabled,
-input[type="button"]:disabled {
+input[type=submit]:disabled,
+input[type=reset]:disabled,
+input[type=button]:disabled {
   background-color: var(--drac-comment);
   color: var(--drac-ui-bg-dark);
   cursor: not-allowed;
   transform: none;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   width: 1.1em;
   height: 1.1em;
   accent-color: var(--drac-purple);
   cursor: pointer;
 }
-
-input[type="checkbox"]:focus-visible,
-input[type="radio"]:focus-visible {
+input[type=checkbox]:focus-visible,
+input[type=radio]:focus-visible {
   outline: 2px solid var(--drac-ui-focus);
   outline-offset: 2px;
 }
@@ -694,14 +675,13 @@ textarea:invalid,
 select:invalid {
   border-color: var(--drac-ui-error);
 }
-
 input:invalid:focus,
 textarea:invalid:focus,
 select:invalid:focus {
   box-shadow: 0 0 0 3px rgba(222, 87, 53, 0.25);
 }
 
-input[type="range"] {
+input[type=range] {
   width: 100%;
   height: 0.5em;
   background-color: var(--drac-ui-bg-light);
@@ -709,8 +689,7 @@ input[type="range"] {
   appearance: none;
   cursor: pointer;
 }
-
-input[type="range"]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
   appearance: none;
   width: 1.2em;
   height: 1.2em;
@@ -719,12 +698,10 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   transition: background-color var(--drac-transition-duration) var(--drac-transition-timing);
 }
-
-input[type="range"]::-webkit-slider-thumb:hover {
+input[type=range]::-webkit-slider-thumb:hover {
   background-color: var(--drac-pink);
 }
-
-input[type="range"]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb {
   width: 1.2em;
   height: 1.2em;
   background-color: var(--drac-purple);
@@ -732,8 +709,7 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   cursor: pointer;
 }
-
-input[type="range"]::-moz-range-thumb:hover {
+input[type=range]::-moz-range-thumb:hover {
   background-color: var(--drac-pink);
 }
 
@@ -745,17 +721,14 @@ progress {
   border-radius: var(--drac-border-radius);
   background-color: var(--drac-ui-bg-light);
 }
-
 progress::-webkit-progress-bar {
   background-color: var(--drac-ui-bg-light);
   border-radius: var(--drac-border-radius);
 }
-
 progress::-webkit-progress-value {
   background-color: var(--drac-purple);
   border-radius: var(--drac-border-radius);
 }
-
 progress::-moz-progress-bar {
   background-color: var(--drac-purple);
   border-radius: var(--drac-border-radius);
@@ -815,12 +788,10 @@ q {
   color: var(--drac-fg);
   quotes: "" " " "" "'" "'";
 }
-
 q::before {
   content: open-quote;
   color: var(--drac-comment);
 }
-
 q::after {
   content: close-quote;
   color: var(--drac-comment);
@@ -887,40 +858,32 @@ meter {
   border-radius: var(--drac-border-radius);
   background-color: var(--drac-ui-bg-light);
 }
-
 meter::-webkit-meter-bar {
   background-color: var(--drac-ui-bg-light);
   border-radius: var(--drac-border-radius);
   border: none;
 }
-
 meter::-webkit-meter-optimum-value {
   background: linear-gradient(to right, var(--drac-green), var(--drac-cyan));
   border-radius: var(--drac-border-radius);
 }
-
 meter::-webkit-meter-suboptimum-value {
   background: linear-gradient(to right, var(--drac-yellow), var(--drac-orange));
   border-radius: var(--drac-border-radius);
 }
-
 meter::-webkit-meter-even-less-good-value {
   background: linear-gradient(to right, var(--drac-orange), var(--drac-red));
   border-radius: var(--drac-border-radius);
 }
-
 meter::-moz-meter-bar {
   border-radius: var(--drac-border-radius);
 }
-
 meter:-moz-meter-optimum::-moz-meter-bar {
   background: linear-gradient(to right, var(--drac-green), var(--drac-cyan));
 }
-
 meter:-moz-meter-sub-optimum::-moz-meter-bar {
   background: linear-gradient(to right, var(--drac-yellow), var(--drac-orange));
 }
-
 meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
   background: linear-gradient(to right, var(--drac-orange), var(--drac-red));
 }
@@ -935,7 +898,6 @@ dialog {
   max-width: 90vw;
   max-height: 90vh;
 }
-
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(2px);
@@ -998,7 +960,6 @@ article {
   padding-bottom: var(--drac-spacing-lg);
   border-bottom: 1px solid var(--drac-ui-bg-light);
 }
-
 article:last-child {
   border-bottom: none;
 }
@@ -1014,17 +975,14 @@ nav ul {
   flex-wrap: wrap;
   gap: var(--drac-spacing-md);
 }
-
 nav li {
   margin-bottom: 0;
 }
-
 nav a {
   padding: var(--drac-spacing-xs) var(--drac-spacing-sm);
   border-radius: var(--drac-border-radius);
   transition: background-color var(--drac-transition-duration) var(--drac-transition-timing);
 }
-
 nav a:hover {
   background-color: var(--drac-ui-bg-light);
   text-decoration: none;
@@ -1064,7 +1022,6 @@ noscript {
 picture {
   display: block;
 }
-
 picture img {
   display: block;
   max-width: 100%;
@@ -1169,14 +1126,12 @@ datalist {
   cursor: pointer;
   transition: background-color var(--drac-transition-duration) var(--drac-transition-timing);
 }
-
 ::part(button):focus-visible,
 ::part(button-primary):focus-visible,
 ::part(button-secondary):focus-visible {
   outline: 2px solid var(--drac-ui-focus);
   outline-offset: 2px;
 }
-
 ::part(button):disabled,
 ::part(button-primary):disabled,
 ::part(button-secondary):disabled {
@@ -1188,7 +1143,6 @@ datalist {
 ::part(button-primary) {
   background-color: var(--drac-purple);
 }
-
 ::part(button):hover,
 ::part(button-primary):hover {
   background-color: var(--drac-pink);
@@ -1197,7 +1151,6 @@ datalist {
 ::part(button-secondary) {
   background-color: var(--drac-ui-bg-light);
 }
-
 ::part(button-secondary):hover {
   background-color: var(--drac-ui-bg-lighter);
 }
@@ -1212,19 +1165,16 @@ datalist {
   border: 1px solid var(--drac-border-color);
   border-radius: var(--drac-border-radius);
 }
-
 ::part(input)::placeholder,
 ::part(textfield)::placeholder {
   color: var(--drac-comment);
 }
-
 ::part(input):focus,
 ::part(textfield):focus {
   border-color: var(--drac-purple);
   outline: none;
   box-shadow: 0 0 0 2px rgba(189, 147, 249, 0.25);
 }
-
 ::part(input):disabled,
 ::part(textfield):disabled {
   opacity: 0.5;
@@ -1300,12 +1250,10 @@ datalist {
   padding: var(--drac-spacing-sm) var(--drac-spacing-md);
   border-bottom: 1px solid var(--drac-ui-bg-light);
 }
-
 ::part(listitem):last-child,
 ::part(item):last-child {
   border-bottom: none;
 }
-
 ::part(listitem):hover,
 ::part(item):hover {
   background-color: var(--drac-ui-bg-dark);
@@ -1317,7 +1265,6 @@ datalist {
   color: var(--drac-fg);
   cursor: pointer;
 }
-
 ::part(menuitem):hover {
   background-color: var(--drac-ui-bg-light);
 }
@@ -1335,7 +1282,6 @@ datalist {
 ::slotted(a) {
   color: var(--drac-link-color);
 }
-
 ::slotted(a):hover {
   color: var(--drac-link-hover-color);
 }
@@ -1372,7 +1318,7 @@ datalist {
   border-color: var(--drac-ui-error);
 }
 
-pre[class*="language-"],
+pre[class*=language-],
 pre.shiki,
 pre.hljs {
   background-color: var(--drac-ui-bg-dark);
@@ -1387,34 +1333,30 @@ pre.hljs {
   tab-size: 2;
   -moz-tab-size: 2;
 }
-
-pre[class*="language-"]::-webkit-scrollbar,
+pre[class*=language-]::-webkit-scrollbar,
 pre.shiki::-webkit-scrollbar,
 pre.hljs::-webkit-scrollbar {
   height: 8px;
 }
-
-pre[class*="language-"]::-webkit-scrollbar-track,
+pre[class*=language-]::-webkit-scrollbar-track,
 pre.shiki::-webkit-scrollbar-track,
 pre.hljs::-webkit-scrollbar-track {
   background: var(--drac-ui-bg-darker);
   border-radius: 4px;
 }
-
-pre[class*="language-"]::-webkit-scrollbar-thumb,
+pre[class*=language-]::-webkit-scrollbar-thumb,
 pre.shiki::-webkit-scrollbar-thumb,
 pre.hljs::-webkit-scrollbar-thumb {
   background: var(--drac-comment);
   border-radius: 4px;
 }
-
-pre[class*="language-"]::-webkit-scrollbar-thumb:hover,
+pre[class*=language-]::-webkit-scrollbar-thumb:hover,
 pre.shiki::-webkit-scrollbar-thumb:hover,
 pre.hljs::-webkit-scrollbar-thumb:hover {
   background: var(--drac-purple);
 }
 
-pre[class*="language-"] code,
+pre[class*=language-] code,
 pre.shiki code,
 pre.hljs code {
   background: transparent;
@@ -1427,7 +1369,6 @@ pre.hljs code {
 div.code-toolbar {
   position: relative;
 }
-
 div.code-toolbar > .toolbar {
   position: absolute;
   top: var(--drac-spacing-sm);
@@ -1435,12 +1376,10 @@ div.code-toolbar > .toolbar {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-
 div.code-toolbar > .toolbar .toolbar-item {
   display: inline-block;
   margin-left: var(--drac-spacing-xs);
 }
-
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar span {
@@ -1454,29 +1393,25 @@ div.code-toolbar > .toolbar span {
   cursor: pointer;
   transition: background-color var(--drac-transition-duration) var(--drac-transition-timing);
 }
-
 div.code-toolbar > .toolbar button:hover,
 div.code-toolbar > .toolbar a:hover,
 div.code-toolbar > .toolbar span:hover {
   background: var(--drac-purple);
 }
-
 div.code-toolbar:hover > .toolbar {
   opacity: 1;
 }
 
-pre[class*="language-"].line-numbers {
+pre[class*=language-].line-numbers {
   position: relative;
   padding-left: 3.5em;
   counter-reset: linenumber;
 }
-
-pre[class*="language-"].line-numbers > code {
+pre[class*=language-].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
-
-pre[class*="language-"].line-numbers .line-numbers-rows {
+pre[class*=language-].line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: var(--drac-spacing-md);
@@ -1487,13 +1422,11 @@ pre[class*="language-"].line-numbers .line-numbers-rows {
   border-right: 1px solid var(--drac-ui-bg-light);
   user-select: none;
 }
-
-pre[class*="language-"].line-numbers .line-numbers-rows > span {
+pre[class*=language-].line-numbers .line-numbers-rows > span {
   display: block;
   counter-increment: linenumber;
 }
-
-pre[class*="language-"].line-numbers .line-numbers-rows > span::before {
+pre[class*=language-].line-numbers .line-numbers-rows > span::before {
   content: counter(linenumber);
   color: var(--drac-comment);
   display: block;
@@ -1501,7 +1434,7 @@ pre[class*="language-"].line-numbers .line-numbers-rows > span::before {
   text-align: right;
 }
 
-pre[class*="language-"] .line-highlight {
+pre[class*=language-] .line-highlight {
   background: rgba(189, 147, 249, 0.15);
   margin-top: var(--drac-spacing-md);
   padding: 0;
@@ -1521,22 +1454,18 @@ pre[class*="language-"] .line-highlight {
   pointer-events: none;
   user-select: none;
 }
-
 .command-line-prompt > span::before {
   color: var(--drac-green);
   content: "$";
   display: block;
   padding-right: 0.8em;
 }
-
 .command-line-prompt > span[data-user]::before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
-
-.command-line-prompt > span[data-user="root"]::before {
+.command-line-prompt > span[data-user=root]::before {
   color: var(--drac-red);
 }
-
 .command-line-prompt > span[data-prompt]::before {
   content: attr(data-prompt);
 }
@@ -1549,11 +1478,9 @@ pre[class*="language-"] .line-highlight {
 .hljs-ln {
   border-collapse: collapse;
 }
-
 .hljs-ln td {
   padding: 0;
 }
-
 .hljs-ln td.hljs-ln-numbers {
   user-select: none;
   text-align: right;
@@ -1562,11 +1489,9 @@ pre[class*="language-"] .line-highlight {
   vertical-align: top;
   padding-right: 0.8em !important;
 }
-
 .hljs-ln td.hljs-ln-numbers .hljs-ln-n {
   padding-right: 0.5em;
 }
-
 .hljs-ln td.hljs-ln-code {
   padding-left: 1em !important;
 }
@@ -1574,42 +1499,33 @@ pre[class*="language-"] .line-highlight {
 pre.shiki {
   background-color: var(--drac-ui-bg-dark);
 }
-
 pre.shiki .line {
   display: block;
 }
-
 pre.shiki .line.diff.add {
   background-color: rgba(80, 250, 123, 0.15);
 }
-
 pre.shiki .line.diff.remove {
   background-color: rgba(255, 85, 85, 0.15);
 }
-
 pre.shiki.has-focused .line:not(.focused) {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
-
 pre.shiki.has-focused:hover .line:not(.focused) {
   opacity: 1;
 }
-
 pre.shiki .line.highlighted {
   background-color: rgba(189, 147, 249, 0.15);
 }
-
 pre.shiki .highlighted-word {
   background-color: rgba(189, 147, 249, 0.3);
   padding: 0.1em 0.2em;
   border-radius: 3px;
 }
-
 pre.shiki .line.error {
   background-color: rgba(255, 85, 85, 0.15);
 }
-
 pre.shiki .line.warning {
   background-color: rgba(255, 184, 108, 0.15);
 }
@@ -1618,11 +1534,9 @@ pre.shiki.line-numbers {
   padding-left: 3.5em;
   position: relative;
 }
-
 pre.shiki.line-numbers code {
   counter-reset: line;
 }
-
 pre.shiki.line-numbers code .line::before {
   counter-increment: line;
   content: counter(line);
@@ -1640,7 +1554,6 @@ pre.shiki.line-numbers code .line::before {
   position: relative;
   margin: var(--drac-spacing-md) 0;
 }
-
 .code-block__header {
   display: flex;
   align-items: center;
@@ -1653,17 +1566,14 @@ pre.shiki.line-numbers code .line::before {
   border-radius: var(--drac-border-radius) var(--drac-border-radius) 0 0;
   border-bottom: 1px solid var(--drac-ui-bg-light);
 }
-
 .code-block__filename {
   color: var(--drac-fg);
 }
-
 .code-block__language {
   color: var(--drac-comment);
   text-transform: uppercase;
   font-size: 0.75em;
 }
-
 .code-block pre {
   margin-top: 0;
   border-radius: 0 0 var(--drac-border-radius) var(--drac-border-radius);
@@ -1684,11 +1594,9 @@ pre.shiki.line-numbers code .line::before {
   opacity: 0;
   transition: opacity 0.2s ease, background-color var(--drac-transition-duration) var(--drac-transition-timing);
 }
-
 .code-copy-button:hover {
   background: var(--drac-purple);
 }
-
 .code-copy-button.copied {
   background: var(--drac-green);
   color: var(--drac-bg);

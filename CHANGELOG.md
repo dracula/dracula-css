@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Jest test framework configured with 80% coverage thresholds
+- Configured Jest with 80% coverage thresholds
 - Improved test comments for clarity and accuracy
 
 ## [1.0.0] - 2024-02-13
@@ -49,5 +49,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Base element styling for typography, forms, tables, and more
 - Linting and formatting tooling (stylelint, prettier)
 
-[1.1.0]: https://github.com/jamesfishwick/dracula-css/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/jamesfishwick/dracula-css/releases/tag/v1.0.0
+[1.1.0]: https://github.com/dracula/dracula-css/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/dracula/dracula-css/releases/tag/v1.0.0

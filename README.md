@@ -1,26 +1,23 @@
 # Dracula CSS
 
 > Framework-agnostic Dracula theme for the web — CSS variables, Sass, and JS tokens.
+> Built and maintained by the community for people who use Dracula Themes. This is **not an official Dracula team project.**
 
 ![Screenshot](./screenshot.png)
 
-## Live Demo
+## 🧛 What This Is (And What It Is Not)
 
-**[View the live demo →](https://draculatheme.com/css)**
-
-## 🧛 What This Is (And What It Isn't)
-
-**dracula-css is NOT a component library.** It's:
+**Dracula CSS is not a component library.** It is:
 
 - A **design token system** (colors, spacing, typography)
 - **Base element styling** (sensible defaults for HTML elements)
-- **Framework-agnostic** — use with React, Vue, Svelte, plain HTML, whatever
+- **Framework-agnostic** — works with React, Vue, Svelte, plain HTML, and other stacks
 
-Think: **"Normalize.css meets Dracula colors"** — not **"Bootstrap but Dracula"**
+It focuses on shared color tokens and HTML defaults, not on a full component framework such as Bootstrap.
 
 ### Why This Exists
 
-| Aspect           | dracula-ui (archived)           | dracula-css                                 |
+| Aspect           | dracula-ui (archived)           | Dracula CSS                                 |
 | ---------------- | ------------------------------- | ------------------------------------------- |
 | **Scope**        | Full React component library    | Variables + base element styling only       |
 | **Framework**    | React-first                     | Framework-agnostic — pure CSS/Sass          |
@@ -31,13 +28,13 @@ Think: **"Normalize.css meets Dracula colors"** — not **"Bootstrap but Dracula
 
 ### Color Accuracy & Spec Compliance
 
-**dracula-css uses official Dracula specification colors** — verified against [spec.draculatheme.com](https://spec.draculatheme.com/).
+**Dracula CSS uses official Dracula specification colors** — verified against [spec.draculatheme.com](https://spec.draculatheme.com/).
 
-Some third-party Dracula implementations use modified color values that differ from the official spec. dracula-css prioritizes spec compliance for consistency with VSCode Dracula, terminal themes, and other official implementations.
+Some third-party Dracula implementations use modified color values that differ from the official spec. Dracula CSS prioritizes spec compliance for consistency with the Dracula theme for Visual Studio Code, terminal themes, and other official implementations.
 
 ## 🦇 Install
 
-All instructions can be found at [draculatheme.com/css](https://draculatheme.com/css).
+All instructions can be found at [https://draculatheme.com/dracula-css](https://draculatheme.com/dracula-css).
 
 ### Quick Start (CDN)
 
@@ -52,7 +49,7 @@ npm install dracula-css
 ```
 
 ```js
-// Import in your JS/CSS
+// Import from JavaScript or a CSS pipeline
 import 'dracula-css/dist/dracula.css';
 ```
 
@@ -71,7 +68,7 @@ import 'dracula-css/dist/dracula.css';
 ```js
 import { dracula, alucard } from 'dracula-css/dist/dracula-tokens.js';
 
-// Use in styled-components, Emotion, etc.
+// Use with styled-components, Emotion, or similar libraries
 const styles = {
   backgroundColor: dracula.colors.bg,
   color: dracula.colors.fg,
@@ -90,11 +87,11 @@ const styles = {
 
 ## 🩸 Color Architecture
 
-dracula-css organizes colors from the [official Dracula specification](https://spec.draculatheme.com/) into three layers for web development:
+Dracula CSS organizes colors from the [official Dracula specification](https://spec.draculatheme.com/) into three layers for web development:
 
 ### Three Color Layers
 
-**1. Syntax Palette** — For prose/content (bright, high contrast)
+**1. Syntax Palette** — For prose and content (bright, high contrast)
 
 ```css
 --drac-bg: #282a36;
@@ -155,9 +152,9 @@ Includes sensible defaults for:
 - **Lists**: ul, ol, li, dl, dt, dd
 - **Tables**: table, th, td, caption (with striped rows)
 - **Forms**: input, textarea, select, button, label, fieldset
-- **Misc**: blockquote, hr, details/summary, abbr
+- **Other elements**: blockquote, hr, details and summary, abbr
 
-**Explicitly NOT included** (by design):
+**Not included** (by design):
 
 - Layout utilities (flexbox helpers, grid systems)
 - Component classes (.card, .modal, .alert)
@@ -210,17 +207,25 @@ All variables are prefixed with `--drac-` to avoid conflicts:
 
 ## 🏰 Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/css/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/dracula-css/graphs/contributors).
 
 | [![James Fishwick](https://github.com/jamesfishwick.png?size=100)](https://github.com/jamesfishwick) |
 | ---------------------------------------------------------------------------------------------------- |
 | [James Fishwick](https://github.com/jamesfishwick)                                                   |
 
-## 🦇 Community
+## Community
 
-- [Twitter](https://twitter.com/draculatheme) — Best for getting updates about themes and new stuff.
-- [GitHub](https://github.com/dracula/dracula-theme/discussions) — Best for asking questions and discussing issues.
-- [Discord](https://draculatheme.com/discord-invite) — Best for hanging out with the community.
+- [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
+- [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
+- [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
+
+## Dracula PRO
+
+[![Dracula PRO](./.github/dracula-pro.png)](https://draculatheme.com/pro)
+
+## License
+
+[MIT License](./LICENSE)
 
 ## External Tools & Resources
 
@@ -229,18 +234,15 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 - [Dracula Colors by Stormhold](https://dracula-colors.stormhold.net/) — Interactive color reference with RGB values and copy-to-clipboard
 - [Stormhold Visual Reference](https://stormhold.net/the-dracula-theme-visual-reference-and-css-variables-for-web-design/) — Comprehensive visual guide to Dracula theme
 
-**Component Libraries (Non-official):**
+**Component libraries (third-party):**
 
 - [dracula-ui](https://github.com/dracula/dracula-ui) (archived) — React component library (uses modified colors, see "Color Accuracy" above)
 
-**Note:** External tools may use modified Dracula color values that differ from the official spec. dracula-css uses spec-compliant colors for consistency with VSCode, terminal themes, and other official Dracula implementations.
+**Note:** External tools may use modified Dracula color values that differ from the official spec. Dracula CSS uses spec-compliant colors for consistency with Visual Studio Code, terminal themes, and other official Dracula implementations.
 
 ## Related
 
+- [Dracula CSS (source)](https://github.com/dracula/dracula-css) — Repository and issue tracker
 - [dracula-markdown-css](https://github.com/dracula/markdown-css) — Dracula theme specifically for rendered markdown
 - [Dracula Theme](https://draculatheme.com) — The main Dracula theme for 400+ apps
 - [Dracula Spec](https://spec.draculatheme.com) — Official color specification
-
-## License
-
-[MIT License](./LICENSE)

@@ -1,22 +1,24 @@
-# 🦇 Install
+### 🦇 Install
 
-## 🧛 Quick Start
+Dracula CSS is published on npm as `dracula-css`. It is a community-built Dracula Theme for the web and is **not an official Dracula team project.**
 
-### CDN
+#### 🧛 Quick Start
 
-Add to your HTML `<head>`:
+##### CDN
+
+Add this to your HTML `<head>`:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dracula-css/dist/dracula.min.css" />
 ```
 
-Or via unpkg:
+Or load it from unpkg:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/dracula-css/dist/dracula.min.css" />
 ```
 
-### npm
+##### `npm`
 
 ```bash
 npm install dracula-css
@@ -34,7 +36,7 @@ Or in your CSS/Sass:
 @import 'dracula-css/dist/dracula.css';
 ```
 
-### Download
+##### Download
 
 Download the CSS files directly:
 
@@ -42,9 +44,9 @@ Download the CSS files directly:
 - [dracula.min.css](./dist/dracula.min.css) - Minified
 - [dracula-variables.css](./dist/dracula-variables.css) - Variables only
 
-## Usage Options
+#### Usage Options
 
-### Full Bundle (Recommended)
+##### Full Bundle (Recommended)
 
 Includes CSS variables and base element styling:
 
@@ -52,9 +54,9 @@ Includes CSS variables and base element styling:
 <link rel="stylesheet" href="dracula.css" />
 ```
 
-### Variables Only
+##### Variables Only
 
-Just the CSS custom properties, no element styling:
+Only the CSS custom properties, with no element styling:
 
 ```html
 <link rel="stylesheet" href="dracula-variables.css" />
@@ -78,7 +80,7 @@ Then use variables in your own CSS:
 }
 ```
 
-### Sass
+##### Sass
 
 Import the source files for maximum flexibility:
 
@@ -104,7 +106,7 @@ Access Sass variables directly:
 }
 ```
 
-### CSS-in-JS
+##### CSS-in-JS
 
 Import the JavaScript tokens:
 
@@ -133,26 +135,26 @@ const style = {
 };
 ```
 
-## 🌙 Dark/Light Mode
+#### 🌙 Dark/Light Mode
 
-### Automatic (System Preference)
+##### Automatic (System Preference)
 
-By default, dracula-css follows the system color scheme preference:
+By default, Dracula CSS follows the system color scheme preferences:
 
 ```css
 /* Automatically applied based on prefers-color-scheme */
 ```
 
-### Manual Toggle
+##### Manual Toggle
 
 Add a class to the `<html>` element:
 
 ```html
 <!-- Force dark mode -->
-<html class="dracula-dark">
-  <!-- Force light mode -->
-  <html class="dracula-light"></html>
-</html>
+<html class="dracula-dark"></html>
+
+<!-- Force light mode -->
+<html class="dracula-light"></html>
 ```
 
 Toggle with JavaScript:
@@ -171,9 +173,9 @@ function setTheme(theme) {
 }
 ```
 
-## 🩸 Color Palette Reference
+#### 🩸 Color Palette Reference
 
-### Syntax Colors (Prose/Content)
+##### Syntax Colors (Prose/Content)
 
 | Variable           | Hex     | Usage                   |
 | ------------------ | ------- | ----------------------- |
@@ -189,7 +191,7 @@ function setTheme(theme) {
 | `--drac-cyan`      | #8be9fd | Links                   |
 | `--drac-pink`      | #ff79c6 | Hover states, keywords  |
 
-### UI Backgrounds
+##### UI Backgrounds
 
 | Variable               | Hex     | Usage              |
 | ---------------------- | ------- | ------------------ |
@@ -199,7 +201,7 @@ function setTheme(theme) {
 | `--drac-ui-bg-lighter` | #424450 | Highest elevation  |
 | `--drac-ui-float`      | #343746 | Floating elements  |
 
-### Functional Colors
+##### Functional Colors
 
 | Variable            | Hex     | Usage                |
 | ------------------- | ------- | -------------------- |
@@ -209,7 +211,7 @@ function setTheme(theme) {
 | `--drac-ui-info`    | #0081d6 | Info states, links   |
 | `--drac-ui-focus`   | #815cd6 | Focus rings          |
 
-### Spacing & Layout
+##### Spacing & Layout
 
 | Variable               | Value   | Usage                 |
 | ---------------------- | ------- | --------------------- |
@@ -220,7 +222,7 @@ function setTheme(theme) {
 | `--drac-spacing-xl`    | 2rem    | Extra large spacing   |
 | `--drac-border-radius` | 6px     | Default border radius |
 
-### Transitions
+##### Transitions
 
 | Variable                     | Value | Usage              |
 | ---------------------------- | ----- | ------------------ |
@@ -239,7 +241,7 @@ Customize transitions globally:
 }
 ```
 
-### ANSI Colors
+##### ANSI Colors
 
 Terminal color palette for web-based terminal emulators and CLI-style interfaces:
 
@@ -279,11 +281,11 @@ Example usage for a terminal emulator component:
 }
 ```
 
-## 🕸️ Syntax Highlighting
+#### 🕸️ Syntax Highlighting
 
-Dracula CSS includes container styling for popular syntax highlighters. You'll need to add the official Dracula theme for your chosen library to get the token colors.
+Dracula CSS includes container styling for common syntax highlighters. For token colors, add the official Dracula theme for the highlighter you use.
 
-### Prism.js
+##### Prism.js
 
 1. Install Prism and the Dracula theme:
 
@@ -309,7 +311,7 @@ npm install prismjs
 </pre>
 ```
 
-### Highlight.js
+##### Highlight.js
 
 1. Install Highlight.js:
 
@@ -329,9 +331,9 @@ npm install highlight.js
 
 3. Dracula CSS provides container styling and line numbers support (with highlightjs-line-numbers plugin).
 
-### Shiki (Recommended)
+##### Shiki (recommended)
 
-Shiki uses VS Code's syntax engine and includes Dracula as a built-in theme — no extra CSS needed for token colors.
+Shiki uses the same syntax grammars as Visual Studio Code and includes Dracula as a built-in theme. You do not need extra CSS for token colors.
 
 1. Install Shiki:
 
@@ -357,7 +359,7 @@ const html = await codeToHtml(code, {
 <pre class="shiki line-numbers">...</pre>
 ```
 
-### Code Block Features
+#### Code Block Features
 
 Dracula CSS includes optional UI patterns for code blocks:
 
@@ -385,13 +387,13 @@ Dracula CSS includes optional UI patterns for code blocks:
 **Language Badge:**
 
 ```html
-<!-- Automatically shows language in corner -->
+<!-- Shows the language label in a corner of the block -->
 <pre class="language-javascript" data-language="js">
   <code>...</code>
 </pre>
 ```
 
-### Astro / Starlight
+#### Astro / Starlight
 
 Astro's built-in syntax highlighting uses Shiki. Configure in `astro.config.mjs`:
 
@@ -405,7 +407,7 @@ export default defineConfig({
 });
 ```
 
-### Docusaurus
+#### Docusaurus
 
 Docusaurus uses Prism by default:
 
@@ -421,7 +423,7 @@ module.exports = {
 };
 ```
 
-### Next.js / MDX
+#### Next.js / MDX
 
 With `rehype-pretty-code` (uses Shiki):
 

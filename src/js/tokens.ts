@@ -1,6 +1,6 @@
 /**
  * Dracula CSS - JavaScript/TypeScript Tokens
- * https://github.com/dracula/css
+ * https://github.com/dracula/dracula-css
  *
  * Color tokens for CSS-in-JS libraries (styled-components, Emotion, etc.)
  */

@@ -1,7 +1,7 @@
 {
   "name": "dracula-css",
   "version": "1.1.0",
-  "description": "Framework-agnostic Dracula theme for the web - CSS variables, Sass, and JS tokens",
+  "description": "Framework-agnostic Dracula Theme for the Web — CSS variables, Sass, and JS tokens",
   "main": "dist/dracula.css",
   "module": "dist/dracula-tokens.js",
   "types": "dist/dracula-tokens.d.ts",
@@ -16,7 +16,7 @@
     "build:css": "sass src/scss/dracula.scss dist/dracula.css --no-source-map",
     "build:css:min": "sass src/scss/dracula.scss dist/dracula.min.css --style=compressed --no-source-map",
     "build:css:vars": "sass src/scss/_variables.scss dist/dracula-variables.css --no-source-map",
-    "build:js": "esbuild src/js/tokens.ts --bundle --format=esm --outfile=dist/dracula-tokens.js && tsc src/js/tokens.ts --declaration --emitDeclarationOnly --outDir dist",
+    "build:js": "esbuild src/js/tokens.ts --bundle --format=esm --outfile=dist/dracula-tokens.js && tsc src/js/tokens.ts --declaration --emitDeclarationOnly --outDir dist && node -e \"require('fs').copyFileSync('dist/tokens.d.ts','dist/dracula-tokens.d.ts')\"",
     "watch": "sass src/scss/dracula.scss dist/dracula.css --watch",
     "clean": "rm -rf dist",
     "test": "jest",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dracula/css.git"
+    "url": "git+https://github.com/dracula/dracula-css.git"
   },
   "keywords": [
     "dracula",
@@ -50,9 +50,9 @@
   "author": "James Fishwick",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dracula/css/issues"
+    "url": "https://github.com/dracula/dracula-css/issues"
   },
-  "homepage": "https://draculatheme.com/css",
+  "homepage": "https://draculatheme.com/dracula-css",
   "lint-staged": {
     "*.{scss,css}": [
       "stylelint --fix",
